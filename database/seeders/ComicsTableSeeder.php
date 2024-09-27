@@ -19,7 +19,7 @@ class ComicsTableSeeder extends Seeder
         $comics = config('comic');
         // ciclo il contenuto assegnato a comics
         foreach($comics as $comic){
-            $new_comic = new Comics();
+            $new_comic = new Comic();
             // popolo la tabella
             $new_comic->title = $comic['title'];
             $new_comic->description = $comic['description'];
@@ -28,8 +28,8 @@ class ComicsTableSeeder extends Seeder
             $new_comic->series = $comic['series'];
             $new_comic->sale_date = $comic['sale_date'];
             $new_comic->type = $comic['type'];
-            $new_comic->artists = jason_encode($comic['artists']);
-            $new_comic->writers = jason_encode($comic['writers']);
+            $new_comic->artists = json_encode($comic['artists']);
+            $new_comic->writers = json_encode($comic['writers']);
 
             // salvo new_comic nel db
             $new_comic->save();
