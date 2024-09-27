@@ -14,7 +14,17 @@ return new class extends Migration
     public function up()
     {
         Schema::create('comics', function (Blueprint $table) {
+            // creo la struttura della tabella
             $table->id();
+            $table->string('title', 50);
+            $table->text('description')->nullable();
+            $table->string('thumb')->nullable();
+            $table->decimal('price', 8, 2);
+            $table->string('series', 50);
+            $table->date('sale_date');
+            $table->string('type', 30);
+            $table->json('artists')->nullable();
+            $table->json('writers')->nullable();
             $table->timestamps();
         });
     }
