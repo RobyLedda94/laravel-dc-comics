@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController as PageController;
+// importo il resource controller
+use App\Http\Controllers\ComicController as ComicController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +17,5 @@ use App\Http\Controllers\PageController as PageController;
 */
 
 Route::get('/', [PageController::class, 'index'])->name('homepage');
+// imposto la rotta al resource (creo le rotte in automatico)
+Route::resource('comics', ComicController::class);
