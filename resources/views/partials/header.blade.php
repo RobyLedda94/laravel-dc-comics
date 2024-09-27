@@ -6,8 +6,8 @@
                         <img class="img-fluid" src="/img/dc-logo.png" alt="DC Comics">
                         <ul class="list-unstyled d-flex ">
                             <li class="px-3"><a class="nav-link fw-bold {{Route::currentRouteName() === 'homepage' ? 'active' : ''}}" href="{{route('homepage')}}">CHARACTERS</a></li>
-                            <li class="px-3"><a class="nav-link fw-bold" href="">COMICS</a></li>
-                            <li class="px-3"><a class="nav-link fw-bold {{Route::currentRouteName() === 'films' ? 'active' : ''}}" href="">MOVIES</a></li>
+                            <li class="px-3"><a class="nav-link fw-bold {{Route::currentRouteName() === 'comics.index' ? 'active' : ''}}" href="{{route('comics.index')}}">COMICS</a></li>
+                            <li class="px-3"><a class="nav-link fw-bold" href="">MOVIES</a></li>
                             <li class="px-3"><a class="nav-link fw-bold" href="">TV</a></li>
                             <li class="px-3"><a class="nav-link fw-bold" href="">GAMES</a></li>
                             <li class="px-3"><a class="nav-link fw-bold" href="">COLLECTIBLES</a></li>
