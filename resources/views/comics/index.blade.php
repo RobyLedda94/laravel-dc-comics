@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container py-3">
         <div class="row">
         @foreach($comics as $comic)
             <div class="col-12 col-md-4 col-lg-2">
@@ -12,6 +12,7 @@
                                 <p class="testo">
                                     {{$comic->series}}
                                 </p>
+                                <a href="{{route('comics.show', ['comic'])}}" class="btn btn-primary">Show More</a>
                             </div>
                         </div>
                 </div>
