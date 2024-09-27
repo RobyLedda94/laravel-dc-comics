@@ -12,7 +12,7 @@
                                 <p class="testo">
                                     {{$comic->series}}
                                 </p>
-                                <a href="{{route('comics.show', ['comic'])}}" class="btn btn-primary">Show More</a>
+                                <a href="{{route('comics.show', ['comic' => $comic->id])}}" class="btn btn-primary">Show More</a>
                             </div>
                         </div>
                 </div>
