@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <form action="" method="post">
+                <form action="{{route ('comics.store')}}" method="post">
                     @csrf 
                     <div class="row gy-2 my-3">
                         <div class="col-12 col-md-6">
