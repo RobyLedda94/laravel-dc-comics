@@ -30,7 +30,7 @@
                         </div>
                         <div class="col-12 col-md-6">
                             <label class="control-label">Descrizione</label>
-                            <textarea type="text" name="description" id="" class="form-control" placeholder="Descrizione">{{ $comic->description }}"</textarea>
+                            <textarea type="text" name="description" id="" class="form-control" placeholder="Descrizione">{{ $comic->description }}</textarea>
                         </div>
                         <div class="col-12 col-md-6">
                             <label class="control-label">Tipologia</label>
