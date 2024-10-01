@@ -4,12 +4,12 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <form action="{{route ('comics.store')}}" method="post">
+                <form action="{{ route ('comics.store') }}" method="post">
                     @csrf 
                     <div class="row gy-2 my-3">
                         <div class="col-12 col-md-6">
                             <label class="control-label">Titolo</label>
-                            <input type="text" name="title" id="" class="form-control" placeholder="Title">
+                            <input type="text" name="title" id="" class="form-control" placeholder="Titolo">
                         </div>
                         <div class="col-12 col-md-6">
                             <label class="control-label">Immagine</label>
@@ -24,6 +24,10 @@
                             <input type="text" name="price" id="" class="form-control" placeholder="Prezzo">
                         </div>
                         <div class="col-12 col-md-6">
+                            <label class="control-label">Data</label>
+                            <input type="text" name="sale_date" id="" class="form-control" placeholder="Data">
+                        </div>
+                        <div class="col-12 col-md-6">
                             <label class="control-label">Descrizione</label>
                             <textarea type="text" name="description" id="" class="form-control" placeholder="Descrizione"></textarea>
                         </div>
@@ -32,8 +36,12 @@
                             <input type="text" name="type" id="" class="form-control" placeholder="Tipologia">
                         </div>
                         <div class="col-12 col-md-6">
+                            <label class="control-label">Artisti</label>
+                            <textarea type="text" name="artists" id="" class="form-control" placeholder="Artisti"></textarea>
+                        </div>
+                        <div class="col-12 col-md-6">
                             <label class="control-label">Scrittori</label>
-                            <textarea name="writers" id="" class="form-control" placeholder="Scrittori"></textarea>
+                            <textarea type="text" name="writers" id="" class="form-control" placeholder="Scrittori"></textarea>
                         </div>
                         <div class="col-12">
                             <button type="submit" class="btn btn-sm btn-success">Salva</button>
