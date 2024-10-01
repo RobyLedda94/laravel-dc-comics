@@ -4,8 +4,9 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <form action="{{ route ('comics.store') }}" method="post">
+                <form action="{{ route ('comics.update', ['comic' => $comic->id]) }}" method="post">
                     @csrf 
+                    @method('PUT')
                     <div class="row gy-2 my-3">
                         <div class="col-12 col-md-6">
                             <label class="control-label">Titolo</label>
