@@ -42,6 +42,8 @@ class ComicController extends Controller
         $form_data = $request->all();
 
         $comic = new Comic ();
+
+        
         $comic->title = $form_data['title'];
         $comic->thumb = $form_data['thumb'];
         $comic->series = $form_data['series'];
